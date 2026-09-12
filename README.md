@@ -9,8 +9,10 @@ accesible sin iniciar sesión.
 
 ## Fuente de verdad
 
-El texto canónico vive en `suscripcion-docs/politica-de-privacidad.md` (repo privado). **Los cambios
-se hacen allá primero** y esta página se actualiza como espejo, en el mismo cambio. Si divergen, la
+Los textos canónicos viven en el repo privado `suscripcion-docs`: `politica-de-privacidad.md`
+(espejo: `index.html`) y `terminos-de-uso.md` (espejo: `terminos.html`, en
+**https://onemindcompany.github.io/suscripcion-politicas/terminos.html**). **Los cambios se hacen
+allá primero** y estas páginas se actualizan como espejo, en el mismo cambio. Si divergen, la
 declaración pública deja de coincidir con la interna, y eso es un problema legal.
 
 ## Desviaciones del estándar de repositorios
