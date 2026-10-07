@@ -18,9 +18,12 @@
 <body>
 
 <h1>Política de privacidad — Suscripciones</h1>
-<p class="meta">Última actualización: 25 de agosto de 2026 · Aplica a: <strong>Suscripciones</strong> para Android y para iOS. · <a href="terminos.html">Términos de uso</a> · <a href="#english">English version below</a></p>
+<p class="meta">Última actualización: 7 de octubre de 2026 · Aplica a: <strong>Suscripciones</strong> para Android y para iOS, desde la versión 1.1.0. · <a href="terminos.html">Términos de uso</a> · <a href="#english">English version below</a></p>
 
-<div class="resumen"><p><strong>Esta aplicación no recopila ningún dato.</strong> No tiene servidores, no se conecta a internet y no comparte información con nadie, incluidos sus desarrolladores.</p></div>
+<div class="resumen">
+<p><strong>Sus cuentas nunca salen de su teléfono.</strong> La aplicación no tiene servidores, no crea cuentas de usuario y sus desarrolladores no reciben ningún dato suyo.</p>
+<p>La aplicación es gratis y muestra un anuncio de <strong>Google</strong> al pie del listado de cuentas. Para eso incluye el SDK de anuncios de Google, que recopila datos técnicos del teléfono —nunca sus cuentas—, como se explica en <a href="#anuncios">Anuncios</a>. Si se suscribe a «Sin anuncios», o si compró la aplicación cuando era de pago, ese SDK ni siquiera se inicia.</p>
+</div>
 
 <h2>Qué datos guarda la aplicación</h2>
 <p>Usted puede guardar, para cada cuenta que registre: el <strong>lugar de suscripción</strong> (un texto que usted escribe), el <strong>usuario</strong> de esa cuenta y la <strong>contraseña</strong> de esa cuenta.</p>
@@ -28,11 +31,46 @@
 
 <h2>Qué NO hace la aplicación</h2>
 <ul>
-<li><strong>No se conecta a internet.</strong> En Android ni siquiera declara el permiso de internet, de modo que el sistema operativo le impide hacerlo.</li>
-<li><strong>No recopila, transmite ni vende información</strong>, ni suya ni de su dispositivo.</li>
-<li><strong>No usa publicidad, analítica, seguimiento ni herramientas de reporte de errores remotas.</strong></li>
-<li><strong>No accede</strong> a su cámara, contactos, ubicación, micrófono, fotos, calendario ni almacenamiento externo.</li>
+<li><strong>No envía sus cuentas a nadie.</strong> Ni el lugar de suscripción, ni el usuario, ni la contraseña, ni lo que usted escribe en el buscador salen del teléfono: no los reciben los anuncios, ni la tienda, ni sus desarrolladores. El anuncio se pide sin ningún dato suyo.</li>
+<li><strong>No tiene servidores ni sincroniza.</strong> El código propio de la aplicación no se conecta a internet. Las únicas conexiones son las del SDK de anuncios de Google y las de la tienda, para la suscripción.</li>
+<li><strong>No vende información</strong>, ni suya ni de su dispositivo.</li>
+<li><strong>No usa analítica propia ni herramientas de reporte de errores remotas.</strong> Lo único que se recopila es lo que recopila el SDK de anuncios, descrito abajo.</li>
+<li><strong>No le pide permiso para rastrearlo</strong> en iOS (ver <a href="#rastreo-en-ios">Rastreo en iOS</a>).</li>
+<li><strong>No accede</strong> a su cámara, contactos, ubicación, micrófono, fotos, calendario ni almacenamiento externo: no pide esos permisos. La ubicación aproximada que Google estima a partir de la dirección IP se explica en <a href="#anuncios">Anuncios</a>.</li>
 <li><strong>No crea cuentas de usuario</strong> y no le pide correo, teléfono ni ningún dato personal para funcionar.</li>
+</ul>
+
+<h2 id="anuncios">Anuncios</h2>
+<p>Mientras usted no tenga «Sin anuncios», la aplicación muestra una franja de anuncio de <strong>Google AdMob</strong> al pie del listado de cuentas. Nunca aparece en la pantalla de ingreso, en el formulario de una cuenta, en Respaldo ni en la pantalla «Sin anuncios», y se oculta mientras haya una contraseña a la vista.</p>
+<p><strong>Lo que el SDK de anuncios no recibe</strong>: ninguna de sus cuentas, usuarios, contraseñas ni búsquedas. La aplicación no le entrega palabras clave ni datos para segmentar.</p>
+<p><strong>Lo que el SDK de anuncios de Google recopila por su cuenta</strong>, según lo que Google declara para su SDK:</p>
+<ul>
+<li>la <strong>dirección IP</strong> del dispositivo, con la que se puede estimar su <strong>ubicación aproximada</strong> (ciudad o región, no la exacta);</li>
+<li><strong>identificadores del dispositivo</strong>: en Android, el ID de publicidad y el ID de conjunto de aplicaciones (<em>app set ID</em>); en iOS, identificadores propios de la aplicación o del desarrollador, nunca el identificador de publicidad;</li>
+<li><strong>interacciones</strong>: aperturas de la aplicación, toques y vistas de los anuncios, y <strong>datos de publicidad</strong>, como qué anuncios se mostraron;</li>
+<li><strong>información de diagnóstico y rendimiento</strong>: tiempo de arranque, bloqueos, consumo de energía y, en iOS, registros de fallos del SDK.</li>
+</ul>
+<p>Google usa estos datos para <strong>mostrar y medir anuncios, para analítica y para prevenir fraudes</strong>, y los transmite <strong>cifrados</strong> (TLS). Los trata según sus propias reglas: la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a> y <a href="https://policies.google.com/technologies/partner-sites">De qué manera Google usa la información de sitios o apps que utilizan sus servicios</a>. Los desarrolladores de esta aplicación no reciben esos datos: en AdMob solo ven reportes agregados, como cuántos anuncios se mostraron y cuánto generaron.</p>
+<p>En Android, usted puede restablecer o borrar el ID de publicidad en los ajustes del teléfono, en la sección de anuncios.</p>
+
+<h2>Consentimiento</h2>
+<p>Antes del primer anuncio, la aplicación consulta la plataforma de mensajes de Google (<em>User Messaging Platform</em>):</p>
+<ul>
+<li>En el <strong>Espacio Económico Europeo, el Reino Unido y Suiza</strong> aparece, después de desbloquear la aplicación, el formulario de Google para que usted acepte o rechace el uso de sus datos para anuncios. Si no da su consentimiento, Google puede mostrar anuncios limitados o ninguno; la aplicación funciona igual.</li>
+<li>En los <strong>estados de EE. UU. con leyes de privacidad</strong> no aparece nada al abrir: usted puede oponerse a la venta o al uso compartido de sus datos para publicidad personalizada desde «Privacidad de anuncios».</li>
+<li>Donde la ley lo exige, el menú del listado muestra <strong>«Privacidad de anuncios»</strong>, que abre el formulario de Google para revisar o cambiar su elección cuando quiera.</li>
+<li>En el resto de los países no aparece ningún formulario.</li>
+</ul>
+
+<h2 id="rastreo-en-ios">Rastreo en iOS</h2>
+<p>La aplicación <strong>no le pide permiso para rastrearlo</strong> (<em>App Tracking Transparency</em>), y por lo tanto no lo rastrea: sin ese permiso, iOS no entrega el identificador de publicidad del dispositivo y el SDK de Google no lo incluye en las solicitudes de anuncios.</p>
+
+<h2>Suscripción «Sin anuncios» y compras</h2>
+<ul>
+<li>La compra la hace la ventana de <strong>Google Play</strong> o del <strong>App Store</strong>: la aplicación nunca ve su tarjeta ni ningún medio de pago. El cobro, la renovación y los reembolsos los procesa la tienda, según su propia política de privacidad (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>).</li>
+<li>Para saber si usted tiene «Sin anuncios», la aplicación le pregunta a la tienda <strong>desde el teléfono</strong>, sin servidor propio: recibe solo qué suscripción tiene activa, y guarda en el teléfono el último estado conocido para funcionar sin conexión. Nada de eso se envía a sus desarrolladores.</li>
+<li>Para reconocer a quien compró la aplicación cuando era de pago, usa información que ya está en el teléfono: en iOS, el comprobante firmado de la compra de la aplicación que entrega el App Store; en Android, si la aplicación ya estaba instalada cuando llegó la versión 1.1.0. El resultado se guarda solo en el teléfono.</li>
+<li>Con «Sin anuncios» activo, o si usted es comprador original, <strong>el SDK de anuncios no se inicia</strong>: no se recopila nada de lo descrito en <a href="#anuncios">Anuncios</a>.</li>
 </ul>
 
 <h2>Autenticación biométrica</h2>
@@ -40,32 +78,38 @@
 
 <h2>Respaldos</h2>
 <p>Los datos de la aplicación están <strong>excluidos de los respaldos automáticos</strong> de Google y de iCloud. Esto es intencional: evita que sus contraseñas salgan del teléfono por una vía que usted no eligió.</p>
-<p>Lo que sí existe es un <strong>respaldo manual que usted decide crear</strong>: la aplicación genera un archivo cifrado con una frase que usted elige, y usted lo guarda donde quiera mediante el menú de compartir de su teléfono. Ese archivo solo se puede abrir con esa frase; ni la aplicación ni sus desarrolladores pueden leerlo ni reciben copia. Si olvida la frase, el archivo no se puede recuperar. Si pierde o restablece su dispositivo y no creó antes un respaldo, sus datos no se pueden recuperar.</p>
+<p>Lo que sí existe es un <strong>respaldo manual que usted decide crear</strong>: la aplicación genera un archivo cifrado con una frase que usted elige, y usted lo guarda donde quiera mediante el menú de compartir de su teléfono. Ese archivo solo se puede abrir con esa frase; ni la aplicación ni sus desarrolladores pueden leerlo ni reciben copia. Si olvida la frase, el archivo no se puede recuperar. La consecuencia sigue siendo la misma: <strong>si pierde o restablece su dispositivo y no creó antes un respaldo, esos datos no se pueden recuperar</strong>.</p>
 
 <h2>Portapapeles</h2>
 <p>Cuando usted copia una contraseña, esta queda en el portapapeles del sistema y, mientras no se sobrescriba, otras aplicaciones podrían leerla. Eso ocurre fuera del control de esta aplicación.</p>
 
 <h2>Borrado de sus datos</h2>
-<p>Desinstalar la aplicación elimina toda su información del dispositivo. La única otra copia posible es un archivo de respaldo que <strong>usted mismo</strong> haya creado y guardado; ese archivo está bajo su control y eliminarlo depende de usted. Fuera de eso, no existe ninguna otra copia en ningún lado.</p>
+<p>Desinstalar la aplicación elimina toda la información que guarda en su dispositivo: sus cuentas y el estado de la suscripción. La única otra copia posible de sus cuentas es un archivo de respaldo que <strong>usted mismo</strong> haya creado y guardado; ese archivo está bajo su control y eliminarlo depende de usted. Fuera de eso, no existe ninguna otra copia en ningún lado.</p>
+<p>Los datos que recopila el SDK de anuncios los tiene Google, no los desarrolladores de esta aplicación, que no pueden consultarlos ni borrarlos. Para eso están los controles de Google: en Android, restablecer o borrar el ID de publicidad; donde aparece el formulario, retirar su consentimiento desde «Privacidad de anuncios»; y las opciones que describe la <a href="https://policies.google.com/privacy">Política de Privacidad de Google</a>.</p>
+<p>Desinstalar la aplicación <strong>no cancela</strong> la suscripción «Sin anuncios»: eso se hace en la tienda.</p>
 
 <h2>Menores de edad</h2>
-<p>La aplicación no está dirigida a menores y, en cualquier caso, no recopila datos de nadie.</p>
+<p>La aplicación no está dirigida a menores de edad. Sus desarrolladores no recopilan datos de nadie; lo que recopila el SDK de anuncios está descrito en <a href="#anuncios">Anuncios</a>.</p>
 
 <h2>Cambios</h2>
-<p>Si esta política cambia, se publicará una versión nueva en este mismo enlace, con su fecha.</p>
+<p>Si esta política cambia, se publicará una versión nueva en este mismo enlace, con su fecha. Esta versión reemplaza a la anterior, que describía la aplicación de pago, sin conexión y sin anuncios.</p>
 
 <h2>Contacto</h2>
+<p>La aplicación la ofrece <strong>Edwin Rodríguez Rivera</strong>, que opera bajo el nombre comercial <strong>One Mind Company</strong>, Chile.</p>
 <p>onemindchile@gmail.com</p>
 
 <h2>Marcas</h2>
-<p class="meta">iPhone, iOS, Face ID, Touch ID, iCloud y Keychain son marcas comerciales de Apple Inc., registradas en EE. UU. y en otros países y regiones. Android y Google Play son marcas comerciales de Google LLC. Esta aplicación es un producto independiente y no ha sido autorizada, patrocinada ni aprobada por Apple Inc. ni por Google LLC.</p>
+<p class="meta">iPhone, iOS, Face ID, Touch ID, iCloud, Keychain y App Store son marcas comerciales de Apple Inc., registradas en EE. UU. y en otros países y regiones. Android, Google Play y Google AdMob son marcas comerciales de Google LLC. Esta aplicación es un producto independiente y no ha sido autorizada, patrocinada ni aprobada por Apple Inc. ni por Google LLC.</p>
 
 <hr>
 
 <h1 id="english">Privacy Policy — Subscriptions</h1>
-<p class="meta">Last updated: August 25, 2026 · Applies to: <strong>Subscriptions</strong> for Android and iOS. · <a href="terminos.html#english">Terms of Use</a></p>
+<p class="meta">Last updated: October 7, 2026 · Applies to: <strong>Subscriptions</strong> for Android and iOS, from version 1.1.0. · <a href="terminos.html#english">Terms of Use</a></p>
 
-<div class="resumen"><p><strong>This application does not collect any data.</strong> It has no servers, never connects to the internet and shares information with no one, including its developers.</p></div>
+<div class="resumen">
+<p><strong>Your accounts never leave your phone.</strong> The app has no servers, creates no user accounts, and its developers receive none of your data.</p>
+<p>The app is free and shows a <strong>Google</strong> ad at the bottom of the account list. To do so it includes Google's ads SDK, which collects technical data from the phone —never your accounts—, as explained under <a href="#ads">Ads</a>. If you subscribe to "Ad-free", or if you bought the app when it was paid, that SDK is never even started.</p>
+</div>
 
 <h2>What the app stores</h2>
 <p>For each account you register you may save: the <strong>subscription place</strong> (free text you type), the <strong>username</strong> and the <strong>password</strong> for that account.</p>
@@ -73,11 +117,46 @@
 
 <h2>What the app does NOT do</h2>
 <ul>
-<li><strong>It never connects to the internet.</strong> On Android it does not even declare the internet permission, so the operating system itself makes it impossible.</li>
-<li><strong>It does not collect, transmit or sell information</strong> about you or your device.</li>
-<li><strong>No ads, no analytics, no tracking, no remote crash reporting.</strong></li>
-<li><strong>No access</strong> to your camera, contacts, location, microphone, photos, calendar or external storage.</li>
+<li><strong>It never sends your accounts to anyone.</strong> The subscription place, the username, the password and whatever you type in the search box never leave the phone: they are not received by the ads, the store or the developers. Ads are requested without any of your data.</li>
+<li><strong>It has no servers and does not sync.</strong> The app's own code never connects to the internet. The only connections are made by Google's ads SDK and by the store, for the subscription.</li>
+<li><strong>It does not sell information</strong> about you or your device.</li>
+<li><strong>No analytics of its own and no remote crash reporting.</strong> The only data collected is what the ads SDK collects, described below.</li>
+<li><strong>It never asks for permission to track you</strong> on iOS (see <a href="#ios-tracking">Tracking on iOS</a>).</li>
+<li><strong>No access</strong> to your camera, contacts, location, microphone, photos, calendar or external storage: it does not request those permissions. The approximate location Google estimates from the IP address is explained under <a href="#ads">Ads</a>.</li>
 <li><strong>No user accounts</strong>: it never asks for your email, phone number or any personal data to work.</li>
+</ul>
+
+<h2 id="ads">Ads</h2>
+<p>Unless you have "Ad-free", the app shows a <strong>Google AdMob</strong> ad banner at the bottom of the account list. It never appears on the unlock screen, the account form, Backup or the "Ad-free" screen, and it hides while a password is visible.</p>
+<p><strong>What the ads SDK does not receive</strong>: none of your accounts, usernames, passwords or searches. The app gives it no keywords and no targeting data.</p>
+<p><strong>What Google's ads SDK collects on its own</strong>, according to what Google discloses for its SDK:</p>
+<ul>
+<li>the device's <strong>IP address</strong>, which may be used to estimate its <strong>approximate location</strong> (city or region, not the exact one);</li>
+<li><strong>device identifiers</strong>: on Android, the advertising ID and the app set ID; on iOS, app- or developer-scoped identifiers, never the advertising identifier;</li>
+<li><strong>interactions</strong>: app launches, taps and ad views, and <strong>advertising data</strong>, such as which ads were shown;</li>
+<li><strong>diagnostic and performance information</strong>: launch time, hang rate, energy use and, on iOS, the SDK's crash logs.</li>
+</ul>
+<p>Google uses this data to <strong>show and measure ads, for analytics and to prevent fraud</strong>, and transmits it <strong>encrypted</strong> (TLS). It handles it under its own rules: the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use our services</a>. The developers of this app do not receive that data: in AdMob they only see aggregate reports, such as how many ads were shown and how much they earned.</p>
+<p>On Android, you can reset or delete your advertising ID in the phone's settings, under ads.</p>
+
+<h2>Consent</h2>
+<p>Before the first ad, the app checks with Google's User Messaging Platform:</p>
+<ul>
+<li>In the <strong>European Economic Area, the United Kingdom and Switzerland</strong>, Google's form appears after you unlock the app, so you can accept or refuse the use of your data for ads. If you do not consent, Google may show limited ads or none; the app works the same.</li>
+<li>In <strong>U.S. states with privacy laws</strong> nothing appears at launch: you can opt out of the sale or sharing of your data for personalized advertising from "Ad privacy".</li>
+<li>Where the law requires it, the list's menu shows <strong>"Ad privacy"</strong>, which opens Google's form so you can review or change your choice at any time.</li>
+<li>Everywhere else no form appears.</li>
+</ul>
+
+<h2 id="ios-tracking">Tracking on iOS</h2>
+<p>The app <strong>never asks for permission to track you</strong> (App Tracking Transparency), and therefore does not track you: without that permission, iOS does not provide the device's advertising identifier and Google's SDK does not include it in ad requests.</p>
+
+<h2>"Ad-free" subscription and purchases</h2>
+<ul>
+<li>Purchases are made in the <strong>Google Play</strong> or <strong>App Store</strong> window: the app never sees your card or any payment method. Billing, renewals and refunds are handled by the store, under its own privacy policy (<a href="https://policies.google.com/privacy">Google</a>, <a href="https://www.apple.com/legal/privacy/">Apple</a>).</li>
+<li>To know whether you have "Ad-free", the app asks the store <strong>from the phone</strong>, with no server of its own: it receives only which subscription is active, and keeps the last known status on the phone so it works offline. None of that is sent to the developers.</li>
+<li>To recognize people who bought the app when it was paid, it uses information already on the phone: on iOS, the signed record of the app purchase provided by the App Store; on Android, whether the app was already installed when version 1.1.0 arrived. The result is stored only on the phone.</li>
+<li>With "Ad-free" active, or if you are an original buyer, <strong>the ads SDK is never started</strong>: none of what is described under <a href="#ads">Ads</a> is collected.</li>
 </ul>
 
 <h2>Biometric authentication</h2>
@@ -85,25 +164,28 @@
 
 <h2>Backups</h2>
 <p>The app's data is <strong>excluded from automatic backups</strong> by Google and iCloud. This is intentional: it prevents your passwords from leaving the phone through a channel you did not choose.</p>
-<p>What does exist is a <strong>manual backup you decide to create</strong>: the app generates a file encrypted with a passphrase you choose, and you save it wherever you want through your phone's share menu. That file can only be opened with that passphrase; neither the app nor its developers can read it or receive a copy. If you forget the passphrase, the file cannot be recovered. If you lose or reset your device and did not create a backup beforehand, your data cannot be recovered.</p>
+<p>What does exist is a <strong>manual backup you decide to create</strong>: the app generates a file encrypted with a passphrase you choose, and you save it wherever you want through your phone's share menu. That file can only be opened with that passphrase; neither the app nor its developers can read it or receive a copy. If you forget the passphrase, the file cannot be recovered. The consequence remains the same: <strong>if you lose or reset your device and did not create a backup beforehand, that data cannot be recovered</strong>.</p>
 
 <h2>Clipboard</h2>
 <p>When you copy a password it goes to the system clipboard and, until overwritten, other apps could read it. That happens outside this app's control.</p>
 
 <h2>Deleting your data</h2>
-<p>Uninstalling the app removes all your information from the device. The only other possible copy is a backup file <strong>you yourself</strong> created and saved; that file is under your control and deleting it is up to you. Beyond that, no other copy exists anywhere.</p>
+<p>Uninstalling the app removes all the information it stores on your device: your accounts and the subscription status. The only other possible copy of your accounts is a backup file <strong>you yourself</strong> created and saved; that file is under your control and deleting it is up to you. Beyond that, no other copy exists anywhere.</p>
+<p>The data collected by the ads SDK is held by Google, not by the developers of this app, who cannot view or delete it. Google's controls are there for that: on Android, resetting or deleting the advertising ID; where the form appears, withdrawing your consent from "Ad privacy"; and the options described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+<p>Uninstalling the app <strong>does not cancel</strong> the "Ad-free" subscription: that is done in the store.</p>
 
 <h2>Children</h2>
-<p>The app is not directed at children and, in any case, collects data from no one.</p>
+<p>The app is not directed at children. Its developers collect data from no one; what the ads SDK collects is described under <a href="#ads">Ads</a>.</p>
 
 <h2>Changes</h2>
-<p>If this policy changes, a new version will be published at this same link, with its date.</p>
+<p>If this policy changes, a new version will be published at this same link, with its date. This version replaces the previous one, which described the paid, offline, ad-free app.</p>
 
 <h2>Contact</h2>
+<p>The app is provided by <strong>Edwin Rodríguez Rivera</strong>, doing business as <strong>One Mind Company</strong>, Chile.</p>
 <p>onemindchile@gmail.com</p>
 
 <h2>Trademarks</h2>
-<p class="meta">iPhone, iOS, Face ID, Touch ID, iCloud and Keychain are trademarks of Apple Inc., registered in the U.S. and other countries and regions. Android and Google Play are trademarks of Google LLC. This application is an independent product and has not been authorized, sponsored, or otherwise approved by Apple Inc. or Google LLC.</p>
+<p class="meta">iPhone, iOS, Face ID, Touch ID, iCloud, Keychain and App Store are trademarks of Apple Inc., registered in the U.S. and other countries and regions. Android, Google Play and Google AdMob are trademarks of Google LLC. This application is an independent product and has not been authorized, sponsored, or otherwise approved by Apple Inc. or Google LLC.</p>
 
 </body>
 </html>
